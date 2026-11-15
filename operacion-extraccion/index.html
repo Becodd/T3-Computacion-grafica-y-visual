@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Operación Extracción – FPS 3D con Three.js</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Three.js y GLTFLoader como modulos ES desde CDN (version fija). Ver README para usarlos en local. -->
+  <script type="importmap">
+    { "imports": { "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+                   "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/" } }
+  </script>
+</head>
+<body>
+  <div id="game"></div>
+  <div id="crosshair"></div><div id="hitmarker"></div>
+  <div id="objective">Extracción: -- m</div>
+  <div id="ammoBox"><div id="weaponName">--</div><div id="ammoNow">0</div><div id="weaponList"></div></div>
+  <div id="toast"></div>
+  <div id="controls">W A S D mover · Mouse apuntar · Clic izq. disparar (1 clic = 1 disparo) · 1 / 2 cambiar arma · Esc pausa</div>
+  <div id="overlay" class="show"><h1 id="ovTitle">CARGANDO…</h1><p id="ovText"></p><div id="ovHint"></div></div>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
